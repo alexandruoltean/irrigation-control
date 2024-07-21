@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <span>Irrigation controller</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="clicked()">Add schedule</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-grid-list cols="1" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header class="card-header">
+        <mat-card-title class="card-title">
+          <span>Picurare</span>
+          <mat-slide-toggle></mat-slide-toggle>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Zones in this schedule:</p>
+        <mat-chip-listbox class="mat-mdc-chip-set-stacked">
+          <mat-chip>Picurare</mat-chip>
+        </mat-chip-listbox>
+        <p>{{sampleText}}</p>
+      </mat-card-content>
+      <mat-card-footer>
+      </mat-card-footer>
+      <mat-card-actions align="end">
+        <button mat-raised-button>Edit</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

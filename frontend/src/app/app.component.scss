@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-card {
+    width: 400px;
+  }
+
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-toggle {
+    margin-left: auto;
+  }
+
+  .card-header{
+    display: block;
+  }
